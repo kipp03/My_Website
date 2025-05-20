@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Maryada Ray | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Maryada Ray</h1>
+    <p>
+      <a href="mailto:hello.maryadaray@gmail.com">hello.maryadaray@gmail.com</a> |
+      <a href="https://www.linkedin.com/in/maryada-ray-04489b288/" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/kipp03" target="_blank">GitHub</a>
+    </p>
+    <div class="nav-buttons">
+      <button onclick="showSection('about')">About Me</button>
+      <button onclick="showSection('projects')">Projects</button>
+      <button onclick="showSection('skills')">Skills</button>
+    </div>
+  </header>
+
+  <div class="main-content">
+    <div class="content">
+      <section id="about" class="section active">
+        <h2>About Me</h2>
+        <div class="about-container">
+          <div class="about-image">
+            <img src="file:///C:/Users/KIIT/Downloads/Satoru_Gojo_arrives_on_the_battlefield_29.webp" alt="Profile Picture">
+          </div>
+          <div class="about-text">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+              Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <p>
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+              dolore eu fugiat nulla pariatur.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="project-grid">
+          <div class="project-card">
+            <img src="C:\Users\KIIT\Downloads\Screenshot 2025-05-20 165445.png" alt="Project Image">
+            <p><a href="https://kipp03.github.io/Kampus_Kart/" target="_blank">Campus Cart</a></p>
+          </div>
+          <div class="project-card">
+            <img src="https://via.placeholder.com/150" alt="Project Image">
+            <p><a href="https://github.com/kipp03/Diabetes_Age_Prediction" target="_blank">Diabetes Age Prediction</a></p>
+          </div>
+          <div class="project-card">
+            <img src="https://via.placeholder.com/150" alt="Project Image">
+            <p><a href="https://github.com/kipp03/todo-app" target="_blank">Todo List App</a></p>
+          </div>
+          <div class="project-card">
+            <img src="https://via.placeholder.com/150" alt="Project Image">
+            <p><a href="https://github.com/kipp03/tic-tac-toe" target="_blank">Tic Tac Toe</a></p>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <h2>Skills</h2>
+        <p><strong>Languages:</strong> Java, C/C++, Python, HTML, CSS, JavaScript, Verilog HDL, SAP ABAP, Bash</p>
+        <p><strong>Tools & Frameworks:</strong> React, FastAPI, Bootstrap, Git, Docker, Kubernetes, OpenCV, Pytorch</p>
+        <p><strong>Databases:</strong> MySQL, PostgreSQL, SQLite</p>
+        <p><strong>Design:</strong> Figma, Photoshop, Illustrator, Autodesk Sketchbook</p>
+        <p><strong>Soft Skills:</strong> Communication, Teamwork, Planning, Adaptability</p>
+      </section>
+    </div>
+  </div>
+
+  <script>
+    function showSection(sectionId) {
+      const sections = document.querySelectorAll('.section');
+      sections.forEach(section => {
+        section.classList.remove('active');
+      });
+      document.getElementById(sectionId).classList.add('active');
+    }
+  </script>
+</body>
+</html>
